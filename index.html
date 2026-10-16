@@ -18,6 +18,7 @@
       <nav class="nav" id="nav">
         <a href="#inicio" class="nav-link">Inicio</a>
         <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#skills" class="nav-link">Skills</a>
         <a href="#proyectos" class="nav-link">Proyectos</a>
         <a href="#redes" class="nav-link">Redes</a>
         <a href="#contacto" class="nav-link">Contacto</a>
@@ -35,7 +36,7 @@
     <section class="hero" id="inicio">
       <div class="container hero-content">
         <div class="hero-avatar reveal">
-          <span>TN</span>
+          <img src="assets/logo.png" alt="THEONAR TECH logo">
         </div>
         <h1 class="hero-title reveal">
           Hola, soy <span class="accent">Teofilo NM</span>
@@ -65,6 +66,9 @@
       <div class="container">
         <h2 class="section-title reveal">Sobre mí</h2>
         <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/photo.jpg" alt="Teofilo Naredo Matamoros">
+          </div>
           <div class="about-text reveal">
             <p>
               Soy estudiante de <strong>Tecnologías de la Información</strong> con especialidad en 
@@ -80,23 +84,81 @@
               Actualmente estoy desarrollando <strong>RetroControl</strong>, un sistema para 
               gestionar el tiempo de uso de PCs, Xbox y PlayStation.
             </p>
+            <div class="about-interests">
+              <h3>Lo que me interesa</h3>
+              <ul class="skills-list">
+                <li>Desarrollo web & software multiplataforma</li>
+                <li>Linux y herramientas de código abierto</li>
+                <li>Creación de contenido tecnológico</li>
+                <li>Música y producción</li>
+                <li>Aprendizaje continuo</li>
+              </ul>
+            </div>
           </div>
-          <div class="about-skills reveal">
-            <h3>Lo que me interesa</h3>
-            <ul class="skills-list">
-              <li>Desarrollo web & software multiplataforma</li>
-              <li>Linux y herramientas de código abierto</li>
-              <li>Creación de contenido tecnológico</li>
-              <li>Música y producción</li>
-              <li>Aprendizaje continuo</li>
-            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <p class="section-subtitle reveal">Tecnologías y habilidades con las que trabajo</p>
+
+        <div class="skills-categories">
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              Desarrollo
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Programación Orientada a Objetos</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Bases de datos</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              Herramientas & Sistemas
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Netlify</span>
+              <span class="skill-tag">Ofimática</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              Soft Skills
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Resolución de problemas</span>
+              <span class="skill-tag">Trabajo en equipo</span>
+              <span class="skill-tag">Organización</span>
+              <span class="skill-tag">Adaptabilidad</span>
+              <span class="skill-tag">Atención al cliente</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Proyectos -->
-    <section class="section section-alt" id="proyectos">
+    <section class="section" id="proyectos">
       <div class="container">
         <h2 class="section-title reveal">Proyectos</h2>
         <div class="projects-grid">
@@ -141,7 +203,7 @@
     </section>
 
     <!-- Redes -->
-    <section class="section" id="redes">
+    <section class="section section-alt" id="redes">
       <div class="container">
         <h2 class="section-title reveal">Redes y canales</h2>
         <p class="section-subtitle reveal">Encuéntrame en estas plataformas</p>
@@ -210,7 +272,7 @@
     </section>
 
     <!-- Contacto -->
-    <section class="section section-alt" id="contacto">
+    <section class="section" id="contacto">
       <div class="container">
         <h2 class="section-title reveal">Contacto</h2>
         <p class="section-subtitle reveal">¿Tienes un proyecto o quieres platicar? Escríbeme.</p>
