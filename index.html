@@ -7,14 +7,16 @@
   <title>Teofilo NM · Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navigation -->
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="#inicio" class="logo">Teofilo <span>NM</span></a>
+      <a href="#inicio" class="logo">
+        <img src="assets/logo.png" alt="" class="logo-img" width="32" height="32">
+        Teofilo <span>NM</span>
+      </a>
       <nav class="nav" id="nav">
         <a href="#inicio" class="nav-link">Inicio</a>
         <a href="#sobre-mi" class="nav-link">Sobre mí</a>
@@ -23,76 +25,116 @@
         <a href="#redes" class="nav-link">Redes</a>
         <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
+      <a href="#contacto" class="btn btn-nav">Contactar</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero híbrido: texto + foto + watermark + stats -->
     <section class="hero" id="inicio">
-      <div class="container hero-content">
-        <div class="hero-avatar reveal">
-          <img src="assets/logo.png" alt="THEONAR TECH logo">
+      <div class="hero-watermark" aria-hidden="true">PORTFOLIO</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-badge reveal">Desarrollador de software · Creador de contenido</p>
+          <h1 class="hero-title reveal">
+            Hola, soy<br>
+            <span class="accent">Teofilo NM</span>
+          </h1>
+          <p class="hero-desc reveal">
+            Apasionado por la tecnología, los sistemas y construir herramientas
+            que resuelvan problemas reales. Diseño experiencias claras y útiles.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline">Hablemos</a>
+          </div>
+          <div class="hero-tech reveal">
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Git</span>
+            <span class="tech-pill">Linux</span>
+          </div>
         </div>
-        <h1 class="hero-title reveal">
-          Hola, soy <span class="accent">Teofilo NM</span>
-        </h1>
-        <p class="hero-subtitle reveal">
-          Desarrollador de Software · Creador de Contenido
-        </p>
-        <p class="hero-desc reveal">
-          Apasionado por la tecnología, Linux y construir herramientas que resuelvan problemas reales.
-        </p>
-        <div class="hero-actions reveal">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        <div class="hero-visual reveal">
+          <div class="hero-photo-wrap">
+            <img src="assets/photo.jpg" alt="Teofilo Naredo Matamoros" class="hero-photo">
+            <div class="hero-float glass">
+              <img src="assets/logo.png" alt="THEONAR TECH" width="40" height="40">
+              <div>
+                <strong>THEONAR TECH</strong>
+                <span>Canal de tecnología</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat glass">
+              <strong>TSU</strong>
+              <span>Soft. Multiplataforma</span>
+            </div>
+            <div class="stat glass">
+              <strong>1+</strong>
+              <span>Proyecto en vivo</span>
+            </div>
+            <div class="stat glass">
+              <strong>3</strong>
+              <span>Canales de contenido</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="hero-scroll">
-        <a href="#sobre-mi" aria-label="Bajar">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 5v14M19 12l-7 7-7-7"/>
-          </svg>
-        </a>
       </div>
     </section>
 
     <!-- Sobre mí -->
     <section class="section" id="sobre-mi">
       <div class="container">
-        <h2 class="section-title reveal">Sobre mí</h2>
+        <div class="section-head reveal">
+          <p class="section-label">Sobre mí</p>
+          <h2 class="section-title">Creo soluciones prácticas y contenido que enseña</h2>
+        </div>
         <div class="about-grid">
-          <div class="about-photo reveal">
-            <img src="assets/photo.jpg" alt="Teofilo Naredo Matamoros">
+          <div class="about-main glass reveal">
+            <p>
+              Soy estudiante de <strong>Tecnologías de la Información</strong> con especialidad en
+              <strong>Desarrollo de Software Multiplataforma</strong>, y tengo formación técnica en Informática.
+            </p>
+            <p>
+              Me gusta crear soluciones útiles, trabajar con diferentes sistemas y aprender de forma constante.
+              Además de programar, creo contenido en YouTube (tecnología y música) y disfruto de los videojuegos.
+            </p>
+            <p>
+              Ahora mismo desarrollo <strong>RetroControl</strong>: un sistema para gestionar el tiempo de uso
+              de PCs, Xbox y PlayStation con cobros, historial y notas.
+            </p>
+            <a href="#contacto" class="btn btn-outline btn-sm">Conectar conmigo</a>
           </div>
-          <div class="about-text reveal">
-            <p>
-              Soy estudiante de <strong>Tecnologías de la Información</strong> con especialidad en 
-              <strong>Desarrollo de Software Multiplataforma</strong>. También cuento con una 
-              formación técnica en Informática.
-            </p>
-            <p>
-              Me gusta crear soluciones prácticas, trabajar con Linux y aprender constantemente. 
-              Además de programar, creo contenido en YouTube (tecnología y música) y disfruto 
-              de los videojuegos.
-            </p>
-            <p>
-              Actualmente estoy desarrollando <strong>RetroControl</strong>, un sistema para 
-              gestionar el tiempo de uso de PCs, Xbox y PlayStation.
-            </p>
-            <div class="about-interests">
-              <h3>Lo que me interesa</h3>
-              <ul class="skills-list">
-                <li>Desarrollo web & software multiplataforma</li>
-                <li>Linux y herramientas de código abierto</li>
-                <li>Creación de contenido tecnológico</li>
-                <li>Música y producción</li>
-                <li>Aprendizaje continuo</li>
+          <div class="about-side">
+            <div class="info-card glass reveal">
+              <h3>Formación</h3>
+              <ul>
+                <li>
+                  <strong>TSU · Soft. Multiplataforma</strong>
+                  <span>Universidad Tecnológica del Centro de Veracruz</span>
+                </li>
+                <li>
+                  <strong>Técnico en Informática</strong>
+                  <span>Centro de Informática de Cuitláhuac</span>
+                </li>
               </ul>
+            </div>
+            <div class="info-card glass reveal">
+              <h3>Intereses</h3>
+              <div class="chip-row">
+                <span>Desarrollo web</span>
+                <span>Linux / FOSS</span>
+                <span>Contenido tech</span>
+                <span>Música</span>
+                <span>Videojuegos</span>
+              </div>
             </div>
           </div>
         </div>
@@ -100,57 +142,59 @@
     </section>
 
     <!-- Skills -->
-    <section class="section section-alt" id="skills">
+    <section class="section" id="skills">
       <div class="container">
-        <h2 class="section-title reveal">Skills</h2>
-        <p class="section-subtitle reveal">Tecnologías y habilidades con las que trabajo</p>
-
-        <div class="skills-categories">
-          <div class="skill-category reveal">
-            <h3 class="skill-category-title">
-              <span class="skill-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              Desarrollo
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Programación Orientada a Objetos</span>
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Bases de datos</span>
+        <div class="section-head reveal">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">Herramientas y habilidades</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-block glass reveal">
+            <div class="skill-block-head">
+              <span class="skill-num">01</span>
+              <h3>Desarrollo</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-bar-top"><span>Java / POO</span><span>Avanzado</span></div>
+                <div class="bar"><i style="--w:85%"></i></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-top"><span>HTML / CSS</span><span>Avanzado</span></div>
+                <div class="bar"><i style="--w:90%"></i></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-top"><span>JavaScript</span><span>Intermedio</span></div>
+                <div class="bar"><i style="--w:75%"></i></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-top"><span>Bases de datos</span><span>Intermedio</span></div>
+                <div class="bar"><i style="--w:70%"></i></div>
+              </div>
             </div>
           </div>
-
-          <div class="skill-category reveal">
-            <h3 class="skill-category-title">
-              <span class="skill-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </span>
-              Herramientas & Sistemas
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">Git & GitHub</span>
-              <span class="skill-tag">Netlify</span>
-              <span class="skill-tag">Ofimática</span>
+          <div class="skill-block glass reveal">
+            <div class="skill-block-head">
+              <span class="skill-num">02</span>
+              <h3>Herramientas</h3>
             </div>
-          </div>
-
-          <div class="skill-category reveal">
-            <h3 class="skill-category-title">
-              <span class="skill-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </span>
-              Soft Skills
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Resolución de problemas</span>
-              <span class="skill-tag">Trabajo en equipo</span>
-              <span class="skill-tag">Organización</span>
-              <span class="skill-tag">Adaptabilidad</span>
-              <span class="skill-tag">Atención al cliente</span>
+            <div class="chip-row dense">
+              <span>Linux</span>
+              <span>Git & GitHub</span>
+              <span>Ofimática</span>
+              <span>Netlify</span>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-block-head" style="margin-top:1.5rem">
+              <span class="skill-num">03</span>
+              <h3>Soft skills</h3>
+            </div>
+            <div class="chip-row dense">
+              <span>Resolución de problemas</span>
+              <span>Trabajo en equipo</span>
+              <span>Organización</span>
+              <span>Adaptabilidad</span>
+              <span>Atención al cliente</span>
             </div>
           </div>
         </div>
@@ -160,42 +204,48 @@
     <!-- Proyectos -->
     <section class="section" id="proyectos">
       <div class="container">
-        <h2 class="section-title reveal">Proyectos</h2>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-badge">Destacado</div>
-            <h3 class="project-title">RetroControl</h3>
-            <p class="project-desc">
-              Sistema web para administrar sesiones de juego en PCs, Xbox y PlayStation. 
-              Control de tiempo (definido o libre), cobros, historial y notas. 
-              Interfaz moderna con modo oscuro.
-            </p>
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>Netlify</span>
-            </div>
-            <div class="project-links">
-              <a href="https://timeradmin.netlify.app/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
-                Ver demo
-              </a>
-              <a href="https://github.com/teonm14/retrotimer-simple" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                Código
-              </a>
+        <div class="section-head row reveal">
+          <div>
+            <p class="section-label">Proyectos</p>
+            <h2 class="section-title">Trabajo seleccionado</h2>
+          </div>
+          <a href="https://github.com/teonm14" target="_blank" rel="noopener" class="link-arrow">Ver GitHub →</a>
+        </div>
+        <div class="projects-list">
+          <article class="project glass reveal">
+            <div class="project-index">01</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Destacado</span>
+                <span class="project-type">Web app · Gestión de tiempo</span>
+              </div>
+              <h3>RetroControl</h3>
+              <p>
+                Sistema para administrar sesiones de juego en PCs, Xbox y PlayStation:
+                tiempo definido o libre, cobros, historial y notas. Interfaz oscura y práctica.
+              </p>
+              <div class="chip-row">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://timeradmin.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ver demo</a>
+                <a href="https://github.com/teonm14/retrotimer-simple" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Código</a>
+              </div>
             </div>
           </article>
-
-          <!-- Placeholder for future projects -->
-          <article class="project-card project-card-soon reveal">
-            <h3 class="project-title">Más proyectos</h3>
-            <p class="project-desc">
-              Pronto agregaré más trabajos aquí. Mientras tanto, puedes seguir mi actividad en GitHub.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/teonm14" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                Ver GitHub
-              </a>
+          <article class="project glass project-soon reveal">
+            <div class="project-index">02</div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Próximamente</span>
+              </div>
+              <h3>Más proyectos en camino</h3>
+              <p>
+                Aquí irán nuevos trabajos. Mientras tanto puedes seguir commits y experimentos en GitHub.
+              </p>
+              <div class="project-actions">
+                <a href="https://github.com/teonm14" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver GitHub</a>
+              </div>
             </div>
           </article>
         </div>
@@ -203,12 +253,14 @@
     </section>
 
     <!-- Redes -->
-    <section class="section section-alt" id="redes">
+    <section class="section" id="redes">
       <div class="container">
-        <h2 class="section-title reveal">Redes y canales</h2>
-        <p class="section-subtitle reveal">Encuéntrame en estas plataformas</p>
+        <div class="section-head reveal">
+          <p class="section-label">Redes</p>
+          <h2 class="section-title">Canales y redes sociales</h2>
+        </div>
         <div class="social-grid">
-          <a href="https://www.youtube.com/@TheoNarTech" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://www.youtube.com/@TheoNarTech" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon youtube">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </div>
@@ -217,8 +269,7 @@
               <span>@TheoNarTech</span>
             </div>
           </a>
-
-          <a href="https://www.youtube.com/@TheoNar18" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://www.youtube.com/@TheoNar18" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon youtube">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </div>
@@ -227,8 +278,7 @@
               <span>@TheoNar18</span>
             </div>
           </a>
-
-          <a href="https://www.youtube.com/watch?v=TZsHroRZFv8" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://www.youtube.com/watch?v=TZsHroRZFv8" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon youtube">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </div>
@@ -237,8 +287,7 @@
               <span>Canal colaborativo</span>
             </div>
           </a>
-
-          <a href="https://www.tiktok.com/@theonaredo14" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://www.tiktok.com/@theonaredo14" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon tiktok">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.16 15.3a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.18 8.18 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1.01-.16z"/></svg>
             </div>
@@ -247,8 +296,7 @@
               <span>@theonaredo14</span>
             </div>
           </a>
-
-          <a href="https://www.instagram.com/nrd.m4tr5" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://www.instagram.com/nrd.m4tr5" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon instagram">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
             </div>
@@ -257,8 +305,7 @@
               <span>@nrd.m4tr5</span>
             </div>
           </a>
-
-          <a href="https://github.com/teonm14" target="_blank" rel="noopener" class="social-card reveal">
+          <a href="https://github.com/teonm14" target="_blank" rel="noopener" class="social-card glass reveal">
             <div class="social-icon github">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             </div>
@@ -272,42 +319,43 @@
     </section>
 
     <!-- Contacto -->
-    <section class="section" id="contacto">
+    <section class="section contact-section" id="contacto">
       <div class="container">
-        <h2 class="section-title reveal">Contacto</h2>
-        <p class="section-subtitle reveal">¿Tienes un proyecto o quieres platicar? Escríbeme.</p>
-        <div class="contact-grid">
-          <a href="mailto:teofilo.naredo.works14@gmail.com" class="contact-card reveal">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
+        <div class="contact-panel glass reveal">
+          <div class="contact-copy">
+            <p class="section-label">Contacto</p>
+            <h2 class="section-title left">¿Tienes un proyecto o quieres formar uno nuevo?</h2>
+            <p class="contact-lead">
+              Estoy abierto a colaboraciones, ideas y proyectos. Escríbeme por correo o WhatsApp.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:teofilo.naredo.works14@gmail.com" class="btn btn-primary">Enviar email</a>
+              <a href="https://wa.me/522712177134" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
             </div>
-            <div>
-              <strong>Email</strong>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:teofilo.naredo.works14@gmail.com" class="contact-line">
+              <span class="contact-ico">✉</span>
               <span>teofilo.naredo.works14@gmail.com</span>
-            </div>
-          </a>
-          <a href="https://wa.me/522712177134" target="_blank" rel="noopener" class="contact-card reveal">
-            <div class="contact-icon whatsapp">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-              </svg>
-            </div>
-            <div>
-              <strong>WhatsApp</strong>
+            </a>
+            <a href="https://wa.me/522712177134" target="_blank" rel="noopener" class="contact-line">
+              <span class="contact-ico">💬</span>
               <span>+52 271 217 7134</span>
-            </div>
-          </a>
+            </a>
+            <p class="contact-line muted">
+              <span class="contact-ico">📍</span>
+              <span>Cuitláhuac, Veracruz, México</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Teofilo NM. Hecho con ganas y café.</p>
+    <div class="container footer-inner">
+      <p>© 2026 Teofilo NM. Hecho con ganas, pasión y café.</p>
+      <a href="#inicio" class="footer-top">↑ Inicio</a>
     </div>
   </footer>
 
